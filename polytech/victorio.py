@@ -1,6 +1,7 @@
 import time
-UNSET_OPTION = 0
-EXIT_OPTION = 8
+import os
+
+EXIT_OPTION = 0
 
 def display_menu():
     print("_________________________________")
@@ -13,14 +14,15 @@ def display_menu():
     print("5. Comment from Niones")
     print("6. Comment from Raquem")
     print("7. Comment from Villarta")
-    print("8. Exit")
+    print("0. Exit")
     print("________________________________")
 
 def get_user_choice():
     try:
         return int(input("Enter choice: "))
     except ValueError:
-        return UNSET_OPTION
+        print("Invalid input. Please enter a number.")
+        return None
 
 def display_get_choice(choice):
     match choice:
@@ -40,7 +42,8 @@ def display_get_choice(choice):
             pass
         case _:
             print("Invalid choice. Try again.")
-    
+    input("\nPress Enter to continue...")
+ 
 def basic_information():
     print("Victorio's basic information: ")
     print("Full Name: Kalelle Mae Barcarse Victorio")
@@ -78,7 +81,9 @@ def kalelle():
             print("Exiting the system.")
             break
 
+        os.system('cls')
         display_get_choice(choice)
+        os.system('cls')
 
 kalelle()
 
