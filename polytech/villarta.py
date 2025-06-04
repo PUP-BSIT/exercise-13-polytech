@@ -14,27 +14,35 @@ def display_header():
 
 def display_menu():
     display_header()
-    print(Fore.MAGENTA + "Please choose an option:")
-    print("1. Basic Information")
+    print(Fore.CYAN + "\nMenu:")
+    print(Fore.YELLOW + "1. Basic Information")
     print("2. Goals")
-    print("0. Exit" + Style.RESET_ALL)
+    print("3. creative")
+    print("4. Comment teammate1")
+    print("5. Comment teammate2")
+    print("6. Comment teammate3")
+    print("7. Comment teammate4")
+    print(Fore.RED + "0. Exit")
 
+def get_choice():
+    while True:
+        try:
+            choice = int(input(Fore.CYAN + "\nEnter your choice: "))
+            if choice in range(0, 8 + 1):
+                return choice
+            else:
+                print(Fore.RED + "Invalid choice. Try again.")
+        except ValueError:
+            print(Fore.RED + "Please enter a valid number.")
+            
 def keith():
     while True:
         clear_screen()
         display_menu()
-        choice = input(Fore.MAGENTA + "\nEnter your choice: " + Style.RESET_ALL)
-        
-        if choice == '1':
-            print(Fore.MAGENTA + "You selected: Basic Information." + Style.RESET_ALL)
-        elif choice == '2':
-            print(Fore.MAGENTA + "You selected: Goals." + Style.RESET_ALL)
-        elif choice == '0':
-            print(Fore.MAGENTA + "Exiting..." + Style.RESET_ALL)
+        choice = get_choice()
+        if choice == EXIT_OPTION:
+            process_choice(choice)
             break
-        else:
-            print(Fore.RED + "Invalid choice. Please try again." + Style.RESET_ALL)
-
-        input("Press Enter to continue...")
+        process_choice(choice)
 
 keith()
