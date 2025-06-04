@@ -19,7 +19,7 @@ def display_menu():
     print("3. Alarm Clock")
     print("4. Raquem comment")
     print("5. Niones Comment")
-    print("6. Comment from Teammate 3")
+    print("6. Capilitan Comment")
     print("7. Comment from Teammate 4")
     print("0. Exit")
     print(Fore.MAGENTA + "________________________________")
@@ -45,7 +45,7 @@ def process_choice(choice):
         case 5:
             display_teammate_comment("Niones")
         case 6:
-            display_teammate_comment("Teammate 3")
+            display_teammate_comment("Capilitan")
         case 7:
             display_teammate_comment("Teammate 4")
         case _:
@@ -97,7 +97,7 @@ def display_teammate_comment(teammate_name):
     comments = {
         "Raquem": "Clean structure and very readable—great job, Kalelle!",
         "Niones": "Simple yet effective! The code is very user-friendly",
-        "Teammate 3": "[Teammate 3's comment goes here]",
+        "Capilitan": "Impressive how you used match-case!",
         "Teammate 4": "[Teammate 4's comment goes here]",
     }
     print(Fore.MAGENTA + comments.get(teammate_name, "[No comment available]"))

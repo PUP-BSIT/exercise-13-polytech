@@ -25,8 +25,8 @@ def display_menu():
     print("2. Goals")
     print("3. View Minecraft Character")
     print("4. Raquem comment")
-    print("5. Option 5")
-    print("6. Option 6")
+    print("5. Victorio comment")
+    print("6. Capilitan comment")
     print("7. Option 7")
     print("0. Exit" + Style.RESET_ALL)
 
@@ -44,7 +44,7 @@ def process_choice(choice):
         case 5:
             option_5()
         case 6:
-            option_6()
+            capilitan_comment()
         case 7:
             option_7()
         case 0:
@@ -133,8 +133,9 @@ def Raquem_comment():
 def option_5():
     print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
 
-def option_6():
-    print(Fore.CYAN + "Option 6." + Style.RESET_ALL)
+def capilitan_comment():
+    print(Fore.CYAN + "Nice use of colorama for a clean! -mikee" + 
+        Style.RESET_ALL)
 
 def option_7():
     print(Fore.CYAN + "Option 7." + Style.RESET_ALL)
