@@ -30,14 +30,18 @@ def display_basic_info():
     print("Birthday: December 5, 2004.")
     print("Civil Status: Single.")
     print("Religion: Roman Catholic.")
+    print("School: Polytechnic University of the Philippines.")
     print("Course: Bachelor of Science in Information Technology (BSIT).")
-
+    print("Favorite Color: Blue.")
+    
 def display_goals():
     print("    💙🦋  Mikee's Goals  🦋💙")
     print("\nHave a good life in the future.")
     print("Stay consistent and love oneself.")
     print("Have a decent job to help my family.")
-    print("Own a business. ")
+    print("Own a business.")
+    print("Travel to beautiful places around the world.")
+    print("Continue learning and growing as a person.")
 
 def odd_or_even():
     print("    💙🦋  Mikee's Even or Odd Game  🦋💙")
