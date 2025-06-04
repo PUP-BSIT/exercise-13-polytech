@@ -11,12 +11,9 @@ def display_menu():
     print("================================")
     print("              Menu              ")
     print("================================")
-    print("1. ")
+    print("1. Mikee C. Capilitan Module")
     print("2. Zyra Joy O. Niones Module")
     print("3. Annie Rose S. Raquem Module")
-    print("1. Mikee C. Capilitan Module")
-    print("2. ")
-    print("3. ")
     print("4. ")
     print("5. ")
     print("6. Exit")
@@ -52,7 +49,6 @@ def main():
         clear_screen()
         display_menu()
         choice = get_user_choice()
-
 
         if choice == EXIT_OPTION:
             print("Exiting the system.")
