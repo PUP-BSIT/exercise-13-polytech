@@ -1,4 +1,5 @@
 import os
+import random
 from colorama import Fore, Style, init
 
 init(autoreset=True)
@@ -14,7 +15,7 @@ def display_menu():
     print(Fore.LIGHTBLUE_EX + "\nPlease choose an option:")
     print("1. Basic Information")
     print("2. Goals")
-    print("3. Option 3")
+    print("3. Odd or Even Game")
     print("4. Option 4")
     print("5. Option 5")
     print("6. Option 6")
@@ -38,8 +39,29 @@ def display_goals():
     print("Have a decent job to help my family.")
     print("Own a business. ")
 
-def option_3():
-    print(Fore.LIGHTBLUE_EX + "Option 3." + Style.RESET_ALL)
+def odd_or_even():
+    print("    💙🦋  Mikee's Even or Odd Game  🦋💙")
+    print("\nI will give you a number. You tell me if it's even or odd.")
+    print("Type 'exit' to quit.\n")
+
+    while True:
+        number = random.randint(1, 100)
+        print(f"Number: {number}")
+        answer = input("Is it even or odd? ").strip().lower()
+
+        if answer == 'exit':
+            print("Goodbye!")
+            break
+
+        if answer not in ['even', 'odd']:
+            print("Please type 'even' or 'odd'.\n")
+            continue
+
+        correct = 'even' if number % 2 == 0 else 'odd'
+        if answer == correct:
+                print("Correct!\n")
+        else:
+                print(f"Wrong! It is {correct}.\n")
 
 def option_4():
     print(Fore.LIGHTBLUE_EX + "Option 4." + Style.RESET_ALL)
@@ -61,7 +83,7 @@ def process_choice(choice):
         case 2:
             display_goals()
         case 3:
-            option_3()
+            odd_or_even()
         case 4:
             option_4()
         case 5:
