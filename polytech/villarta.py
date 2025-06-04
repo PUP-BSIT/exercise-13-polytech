@@ -112,6 +112,7 @@ def display_teammate_comment3():
 def display_teammate_comment4():
     display_header()
     print(Fore.CYAN + "Option 7 comments." + Style.RESET_ALL)
+    
 def fun_fact_maker():
     display_header()
     print(Fore.CYAN + "Random Fun Fact")
