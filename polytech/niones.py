@@ -152,5 +152,3 @@ def zyra():
         if choice == 0:
             break
         input("Press Enter to continue...")
-
-zyra()
