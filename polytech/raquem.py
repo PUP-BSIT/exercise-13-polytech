@@ -23,45 +23,6 @@ def display_menu():
     print("7. Option 7")
     print("0. Exit" + Style.RESET_ALL)
 
-def display_basic_info():
-    print(Fore.MAGENTA + "Basic Information goes here." + Style.RESET_ALL)
-    
-def display_goals():
-    print(Fore.MAGENTA + "Goals go here." + Style.RESET_ALL)
-
-def option_3():
-    print(Fore.MAGENTA + "Option 3." + Style.RESET_ALL)
-
-def option_4():
-    print(Fore.MAGENTA + "Option 4." + Style.RESET_ALL)
-
-def option_5():
-    print(Fore.MAGENTA + "Option 5." + Style.RESET_ALL)
-
-def option_6():
-    print(Fore.MAGENTA + "Option 6." + Style.RESET_ALL)
-
-def option_7():
-    print(Fore.MAGENTA + "Option 7." + Style.RESET_ALL)
-
-def exit_message():
-    print(
-        Fore.CYAN + Style.BRIGHT +
-        "=======================================\n" +
-        "🌸 Thank you for visiting! Goodbye! 🌸\n" +
-        "=======================================" +
-        Style.RESET_ALL
-    )
-
-def invalid_choice_message():
-    print(
-        Fore.RED + Style.BRIGHT +
-        "========================================\n" +
-        "❌ Invalid choice. Please try again. ❌\n" +
-        "========================================" +
-        Style.RESET_ALL
-    )
-
 def process_choice(choice):
     clear_screen()
     match choice:
@@ -83,6 +44,52 @@ def process_choice(choice):
             exit_message()
         case _:
             invalid_choice_message()
+
+def display_basic_info():
+    display_header()
+    print(Fore.MAGENTA + "Basic Information goes here." + Style.RESET_ALL)
+    
+def display_goals():
+    display_header()
+    print(Fore.MAGENTA + "Goals go here." + Style.RESET_ALL)
+
+def option_3():
+    display_header()
+    print(Fore.MAGENTA + "Option 3." + Style.RESET_ALL)
+
+def option_4():
+    display_header()
+    print(Fore.MAGENTA + "Option 4." + Style.RESET_ALL)
+
+def option_5():
+    display_header()
+    print(Fore.MAGENTA + "Option 5." + Style.RESET_ALL)
+
+def option_6():
+    display_header()
+    print(Fore.MAGENTA + "Option 6." + Style.RESET_ALL)
+
+def option_7():
+    display_header()
+    print(Fore.MAGENTA + "Option 7." + Style.RESET_ALL)
+
+def exit_message():
+    print(
+        Fore.CYAN + Style.BRIGHT +
+        "=======================================\n" +
+        "🌸 Thank you for visiting! Goodbye! 🌸\n" +
+        "=======================================" +
+        Style.RESET_ALL
+    )
+
+def invalid_choice_message():
+    print(
+        Fore.RED + Style.BRIGHT +
+        "========================================\n" +
+        "❌ Invalid choice. Please try again. ❌\n" +
+        "========================================" +
+        Style.RESET_ALL
+    )
 
 def annie():
     while True:
