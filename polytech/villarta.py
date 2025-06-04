@@ -1,4 +1,5 @@
 import os
+import random
 from colorama import Fore, Style, init
 
 # Initialize colorama
@@ -19,7 +20,7 @@ def display_menu():
     print(Fore.CYAN + "\nMenu:")
     print(Fore.YELLOW + "1. Basic Information")
     print("2. Goals")
-    print("3. for option 3")
+    print("3. Random Fun Facts")
     print("4. Comment teammate1")
     print("5. Comment teammate2")
     print("6. Comment teammate3")
@@ -45,7 +46,7 @@ def process_choice(choice):
         case 2:
             display_goals()
         case 3:
-            options()
+            fun_fact_maker()
         case 4:
             display_teammate_comment1()
         case 5:
@@ -57,7 +58,6 @@ def process_choice(choice):
         case 0:
             print(Fore.MAGENTA + "Thank you! Goodbye!\n")
             return
-    input(Fore.GREEN + "\nPress Enter to continue...")
 
 def display_basic_info():
     display_header()
@@ -109,6 +109,26 @@ def display_teammate_comment3():
 def display_teammate_comment4():
     display_header()
     print(Fore.CYAN + "Option 7 comments." + Style.RESET_ALL)
+def fun_fact_maker():
+    display_header()
+    print(Fore.CYAN + "Random Fun Fact")
+    print("-" * 40)
+
+    facts = [
+        "Honey never spoils.",
+        "Bananas are actually berries!",
+        "Octopuses have three hearts.",
+        "Strawberries aren't real berries.",
+        "The Eiffel Tower grows taller in summer.",
+        "You blink around 20 times a minute.",
+        "Some cats are allergic to humans.",
+        "There are more stars than grains of sand.",
+        "A group of flamingos is called a flamboyance.",
+        "The moon has moonquakes caused by gravity."
+    ]
+
+    fact = random.choice(facts)
+    print(Fore.YELLOW + fact)
 
 def keith():
     while True:
@@ -119,5 +139,6 @@ def keith():
             process_choice(choice)
             break
         process_choice(choice)
+        input(Fore.GREEN + "\nPress Enter to continue...")
 
 keith()
