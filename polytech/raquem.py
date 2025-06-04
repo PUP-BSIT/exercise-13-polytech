@@ -1,4 +1,5 @@
 import os
+import random
 from colorama import Fore, Style, init
 
 init(autoreset=True)
@@ -16,7 +17,7 @@ def display_menu():
     print(Fore.MAGENTA + "Please choose an option:")
     print("1. Basic Information")
     print("2. Goals")
-    print("3. Option 3")
+    print("3. Quote Maker")
     print("4. Option 4")
     print("5. Option 5")
     print("6. Option 6")
@@ -31,7 +32,7 @@ def process_choice(choice):
         case 2:
             display_goals()
         case 3:
-            option_3()
+            quote_maker()
         case 4:
             option_4()
         case 5:
@@ -45,9 +46,12 @@ def process_choice(choice):
         case _:
             invalid_choice_message()
 
+def title_center(title, width=50):
+    return Fore.MAGENTA + Style.BRIGHT + title.center(width) + Style.RESET_ALL
+
 def display_basic_info():
     display_header()
-    print(Fore.MAGENTA + Style.BRIGHT + "Basic Information")
+    print(title_center("Basic Information"))
     print("-" * 50)
     print("Name: Annie Rose Raquem")
     print("Age: 20")
@@ -57,16 +61,35 @@ def display_basic_info():
 
 def display_goals():
     display_header()
-    print(Fore.MAGENTA + Style.BRIGHT + "Goals in Life")
+    print(title_center("Goals in Life"))
     print("-" * 50)
     print("1. Finish my degree.")
     print("2. Have a stable job.")
     print("3. Live a happy life.")
    
 
-def option_3():
+def quote_maker():
     display_header()
-    print(Fore.MAGENTA + "Option 3." + Style.RESET_ALL)
+    print(title_center("Quote Maker"))
+    print("-" * 50)
+    quotes = [
+        ("“The best way to predict the future is to create it.”",
+         "Peter Drucker"),
+        ("“Success is not final, failure is not fatal: It is the courage to "
+         "continue that counts.”",
+         "Winston Churchill"),
+        ("“Believe you can and you’re halfway there.”",
+         "Theodore Roosevelt"),
+        ("“Your time is limited, so don’t waste it living someone else’s "
+         "life.”",
+         "Steve Jobs"),
+        ("“Be yourself; everyone else is already taken.”",
+         "Oscar Wilde")
+    ]
+    quote, author = random.choice(quotes)
+    print("\n" + Fore.MAGENTA + f"{quote}")
+    print(f"  — {author}\n")
+
 
 def option_4():
     display_header()
