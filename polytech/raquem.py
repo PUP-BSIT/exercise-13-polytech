@@ -25,7 +25,7 @@ def display_menu():
 
 def display_basic_info():
     print(Fore.MAGENTA + "Basic Information goes here." + Style.RESET_ALL)
-
+    
 def display_goals():
     print(Fore.MAGENTA + "Goals go here." + Style.RESET_ALL)
 
@@ -43,6 +43,24 @@ def option_6():
 
 def option_7():
     print(Fore.MAGENTA + "Option 7." + Style.RESET_ALL)
+
+def exit_message():
+    print(
+        Fore.CYAN + Style.BRIGHT +
+        "=======================================\n" +
+        "🌸 Thank you for visiting! Goodbye! 🌸\n" +
+        "=======================================" +
+        Style.RESET_ALL
+    )
+
+def invalid_choice_message():
+    print(
+        Fore.RED + Style.BRIGHT +
+        "========================================\n" +
+        "❌ Invalid choice. Please try again. ❌\n" +
+        "========================================" +
+        Style.RESET_ALL
+    )
 
 def process_choice(choice):
     clear_screen()
@@ -62,17 +80,9 @@ def process_choice(choice):
         case 7:
             option_7()
         case 0:
-            print(
-                Fore.MAGENTA +
-                "Thank you for using this menu! Goodbye!" +
-                Style.RESET_ALL
-            )
+            exit_message()
         case _:
-            print(
-                Fore.RED +
-                "Invalid choice. Please try again." +
-                Style.RESET_ALL
-            )
+            invalid_choice_message()
 
 def annie():
     while True:
