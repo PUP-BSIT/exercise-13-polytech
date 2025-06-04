@@ -18,7 +18,7 @@ def display_menu():
     print("1. Basic Information")
     print("2. Goals")
     print("3. Quote Maker")
-    print("4. Teammate Comment: Person 1")
+    print("4. Teammate Comment: zyra")
     print("5. Teammate Comment: Person 2")
     print("6. Teammate Comment: Person 3")
     print("7. Teammate Comment: Person 4")
@@ -35,7 +35,7 @@ def process_choice(choice):
         case 3:
             quote_maker()
         case 4:
-            display_teammate_comment("1")
+            display_teammate_comment("zyra")
         case 5:
             display_teammate_comment("2")
         case 6:
@@ -110,7 +110,7 @@ def display_teammate_comment(teammate_name):
     print(title_center(f"Comment from {teammate_name}"))
     print("-" * 50)
     comments = {
-        "1": "[Person 1 comment goes here]",
+        "zyra": "[The quote feature is such a nice touch, very inspiring!]",
         "2": "[Person 2 comment goes here]",
         "3": "[Person 3 comment goes here]",
         "4": "[Person 4 comment goes here]",
