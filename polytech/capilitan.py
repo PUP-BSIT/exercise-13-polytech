@@ -23,14 +23,13 @@ def display_menu():
 
 def display_basic_info():
     print("    💙🦋  Mikee's Basic Information  🦋💙")
-
-    print("\nName: Mikee . Capilitan. ")
-    print("Age: 20 years old. ") 
-    print("Sex: Female. ")
-    print("Birthday: December 5, 2004. ")
-    print("Civil Status: Single. ")
-    print("Religion: Roman Catholic. ")
-    print("Course: Bachelor of Science in Information Technology (BSIT). ")
+    print("\nName: Mikee C. Capilitan.")
+    print("Age: 20 years old.") 
+    print("Sex: Female.")
+    print("Birthday: December 5, 2004.")
+    print("Civil Status: Single.")
+    print("Religion: Roman Catholic.")
+    print("Course: Bachelor of Science in Information Technology (BSIT).")
 
 def display_goals():
     print("    💙🦋  Mikee's Goals  🦋💙")
