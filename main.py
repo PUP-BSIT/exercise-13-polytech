@@ -1,4 +1,4 @@
-from polytech import niones, raquem, villarta
+from polytech import niones, raquem, capilitan, villarta
 import os
 
 UNSET_OPTION = 0
@@ -11,8 +11,8 @@ def display_menu():
     print("================================")
     print("              Menu              ")
     print("================================")
-    print("1. ")
-    print("2. Zyra Joy O. Niones ModuleZyra Joy O. Niones Module")
+    print("1. Mikee C. Capilitan Module")
+    print("2. Zyra Joy O. Niones Module")
     print("3. Annie Rose S. Raquem Module")
     print("4. John Keith Villarta Module")
     print("5. ")
@@ -28,8 +28,7 @@ def get_user_choice():
 def display_get_choice(choice):
     match choice:
         case 1:
-            #TO-DO(Capilitan): call your module here
-            pass
+            capilitan.mikee()
         case 2:
             niones.zyra()
         case 3:
@@ -49,7 +48,6 @@ def main():
         display_menu()
         choice = get_user_choice()
 
-
         if choice == EXIT_OPTION:
             print("Exiting the system.")
             break
@@ -57,8 +55,3 @@ def main():
         display_get_choice(choice)
 
 main()
-
-
-
-
-
