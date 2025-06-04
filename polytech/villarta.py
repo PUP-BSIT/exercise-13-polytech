@@ -143,5 +143,3 @@ def keith():
             break
         process_choice(choice)
         input(Fore.GREEN + "\nPress Enter to continue...")
-
-keith()
