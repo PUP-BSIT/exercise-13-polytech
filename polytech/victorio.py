@@ -25,12 +25,12 @@ def get_user_choice():
         print("Invalid input. Please enter a number.")
         return None
 
-def display_get_choice(choice):
+def process_choice(choice):
     match choice:
         case 1:
-            basic_information()
+            display_basic_info()
         case 2:
-            goals()
+            display_goals()
         case 3:
             time_clock()
         case 4:
@@ -44,21 +44,24 @@ def display_get_choice(choice):
         case _:
             print("Invalid choice. Try again.")
     input("\nPress Enter to continue...")
- 
-def basic_information():
+
+def display_basic_info():
     print("Victorio's basic information: ")
     print("Full Name: Kalelle Mae Barcarse Victorio")
     print("Birthdate: December 11, 2004")
     print("Age: 20 years old")
     print("Hobbies: Playing video games, reading manhwa, and"
             " playing roblox")
+    print("Favorite Color: Purple")
 
-def goals():
+def display_goals():
     print("Victorio's goals: ")
     print("- To graduate from college")
     print("- To have a cat")
     print("- To have a stable job")
     print("- To make my parents proud")
+    print("- To be happy and contented")
+    print("- To be with someone I love")
 
 def time_clock():
     print("Time Clock")
@@ -94,7 +97,5 @@ def kalelle():
             break
 
         os.system('cls')
-        display_get_choice(choice)
+        process_choice(choice)
         os.system('cls')
-
-kalelle()
