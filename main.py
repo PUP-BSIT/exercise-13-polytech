@@ -1,5 +1,4 @@
-from polytech import niones, raquem
-from polytech import capilitan
+from polytech import niones, raquem, capilitan
 import os
 
 UNSET_OPTION = 0
@@ -62,8 +61,3 @@ def main():
         display_get_choice(choice)
 
 main()
-
-
-
-
-
