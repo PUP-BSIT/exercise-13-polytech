@@ -21,7 +21,7 @@ def display_menu():
     print("4. Teammate Comment: zyra")
     print("5. Teammate Comment: Victorio")
     print("6. Teammate Comment: capilitan")
-    print("7. Teammate Comment: villarta")
+    print("7. Teammate Comment: Person 4")
     print("0. " + Fore.RED + "Exit" + Style.RESET_ALL)
     print(Fore.CYAN + Style.BRIGHT + "-" * 50)
 
@@ -113,7 +113,7 @@ def display_teammate_comment(teammate_name):
         "zyra": "[The quote feature is such a nice touch, very inspiring!]",
         "victorio": "What a colorful and cool program, Annie! ",
         "capilitan": "[Impressive use of Python features!]",
-        "villarta": "[Love the color-coded menu]",
+        "villarta": "[Nice Code]",
     }
     print(comments.get(teammate_name, "[No comment available]"))
 
@@ -153,4 +153,3 @@ def annie():
         if choice == 0:
             break
         input(Fore.GREEN + "\nPress Enter to continue...")
-
