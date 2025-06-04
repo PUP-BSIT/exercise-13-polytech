@@ -3,6 +3,9 @@ from colorama import Fore, Style, init
 
 init(autoreset=True)
 
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def display_header():
     print(Fore.MAGENTA + Style.BRIGHT + "=" * 50)
     print(" 🌸 Welcome to Annie Rose Raquem's Menu! 🌸")
@@ -17,6 +20,7 @@ def display_menu():
 
 def annie():
     while True:
+        clear_screen()
         display_menu()
         choice = input(
             Fore.MAGENTA + "\nEnter your choice: " + Style.RESET_ALL
