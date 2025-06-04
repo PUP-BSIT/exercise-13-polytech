@@ -33,7 +33,11 @@ def display_basic_info():
     print("Course: Bachelor of Science in Information Technology (BSIT). ")
 
 def display_goals():
-    print(Fore.LIGHTBLUE_EX + "Goals go here." + Style.RESET_ALL)
+    print("    💙🦋  Mikee's Goals  🦋💙")
+    print("\nHave a good life in the future.")
+    print("Stay consistent and love oneself.")
+    print("Have a decent job to help my family.")
+    print("Own a business. ")
 
 def option_3():
     print(Fore.LIGHTBLUE_EX + "Option 3." + Style.RESET_ALL)
