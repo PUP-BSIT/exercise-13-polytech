@@ -142,4 +142,3 @@ def annie():
             break
         input(Fore.GREEN + "\nPress Enter to continue...")
 
-annie()
