@@ -10,19 +10,20 @@ def clear_screen():
 def display_header():
     print(Fore.MAGENTA + Style.BRIGHT + "=" * 50)
     print(" 🌸 Welcome to Annie Rose Raquem's Menu! 🌸")
-    print("=" * 50 + Style.RESET_ALL)
+    print(Fore.MAGENTA + Style.BRIGHT + "=" * 50 + Style.RESET_ALL)
 
 def display_menu():
     display_header()
-    print(Fore.MAGENTA + "Please choose an option:")
+    print(Fore.CYAN + "Please choose an option:")
     print("1. Basic Information")
     print("2. Goals")
     print("3. Quote Maker")
-    print("4. Option 4")
-    print("5. Option 5")
-    print("6. Option 6")
-    print("7. Option 7")
-    print("0. Exit" + Style.RESET_ALL)
+    print("4. Teammate Comment: Person 1")
+    print("5. Teammate Comment: Person 2")
+    print("6. Teammate Comment: Person 3")
+    print("7. Teammate Comment: Person 4")
+    print("0. " + Fore.RED + "Exit" + Style.RESET_ALL)
+    print(Fore.CYAN + Style.BRIGHT + "-" * 50)
 
 def process_choice(choice):
     clear_screen()
@@ -34,20 +35,22 @@ def process_choice(choice):
         case 3:
             quote_maker()
         case 4:
-            option_4()
+            display_teammate_comment("1")
         case 5:
-            option_5()
+            display_teammate_comment("2")
         case 6:
-            option_6()
+            display_teammate_comment("3")
         case 7:
-            option_7()
+            display_teammate_comment("4")
         case 0:
             exit_message()
         case _:
             invalid_choice_message()
 
 def title_center(title, width=50):
-    return Fore.MAGENTA + Style.BRIGHT + title.center(width) + Style.RESET_ALL
+    centered = title.center(width)
+    return (Fore.LIGHTYELLOW_EX + Style.BRIGHT +
+            centered[:80] + Style.RESET_ALL)
 
 def display_basic_info():
     display_header()
@@ -88,24 +91,19 @@ def quote_maker():
     ]
     quote, author = random.choice(quotes)
     print("\n" + Fore.MAGENTA + f"{quote}")
-    print(f"  — {author}\n")
+    print(f"  — {author}")
 
-
-def option_4():
+def display_teammate_comment(teammate_name):
     display_header()
-    print(Fore.MAGENTA + "Option 4." + Style.RESET_ALL)
-
-def option_5():
-    display_header()
-    print(Fore.MAGENTA + "Option 5." + Style.RESET_ALL)
-
-def option_6():
-    display_header()
-    print(Fore.MAGENTA + "Option 6." + Style.RESET_ALL)
-
-def option_7():
-    display_header()
-    print(Fore.MAGENTA + "Option 7." + Style.RESET_ALL)
+    print(title_center(f"Comment from {teammate_name}"))
+    print("-" * 50)
+    comments = {
+        "1": "[Person 1 comment goes here]",
+        "2": "[Person 2 comment goes here]",
+        "3": "[Person 3 comment goes here]",
+        "4": "[Person 4 comment goes here]",
+    }
+    print(comments.get(teammate_name, "[No comment available]"))
 
 def exit_message():
     print(
@@ -142,6 +140,6 @@ def annie():
         process_choice(choice)
         if choice == 0:
             break
-        input("Press Enter to continue...")
+        input(Fore.GREEN + "\nPress Enter to continue...")
 
 annie()
