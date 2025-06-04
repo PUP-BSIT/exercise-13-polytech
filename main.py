@@ -7,13 +7,16 @@ def clear_screen():
     os.system('cls')
 
 def display_menu():
-    print("-----Menu-----")
-    print("1. Option 1")
-    print("2. Option 2")
-    print("3. Option 3")
-    print("4. Option 4")
-    print("5. Option 5")
+    print("================================")
+    print("              Menu              ")
+    print("================================")
+    print("1. ")
+    print("2. ")
+    print("3. ")
+    print("4. ")
+    print("5. ")
     print("6. Exit")
+    print("================================")
 
 def get_user_choice():
     try:
@@ -21,20 +24,43 @@ def get_user_choice():
     except ValueError:
         return UNSET_OPTION
 
+def display_get_choice(choice):
+    match choice:
+        case 1:
+            #TO-DO(Capilitan): call your module here
+            pass
+        case 2:
+            #TO-DO(Niones): call your module here
+            pass
+        case 3:
+            #TO-DO(Raquem): call your module here
+            pass
+        case 4:
+            #TO-DO(Villarta): call your module here
+            pass
+        case 5:
+            #TO-DO(Victorio): call your module here
+            pass
+        case _:
+            print("Invalid choice. Try again.")
+    input("Press Enter to continue...")
+
 def main():
     while True:
         clear_screen()
         display_menu()
         choice = get_user_choice()
 
+
         if choice == EXIT_OPTION:
             print("Exiting the system.")
             break
-        elif 1 <= choice <= 5:
-            print(f"You selected Option {choice}.")
-        else:
-            print("Invalid choice. Try again.")
 
-        input("Press Enter to continue...")
+        display_get_choice(choice)
 
 main()
+
+
+
+
+
