@@ -12,7 +12,7 @@ def display_menu():
     print("              Menu              ")
     print("================================")
     print("1. ")
-    print("2. Zyra Joy O. Niones Module")
+    print("2. Zyra Joy O. Niones ModuleZyra Joy O. Niones Module")
     print("3. Annie Rose S. Raquem Module")
     print("4. ")
     print("5. ")
@@ -32,7 +32,6 @@ def display_get_choice(choice):
             pass
         case 2:
             niones.zyra()
-            pass
         case 3:
             raquem.annie()
         case 4:
