@@ -1,5 +1,9 @@
 import time
 import os
+from colorama import init, Fore, Style
+
+# Initialize colorama
+init(autoreset=True)
 
 EXIT_OPTION = 0
 
@@ -7,10 +11,9 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def display_menu():
-    #loop continues until the user enters 0
-    print("_________________________________")
-    print("  Victorio's information System  ")
-    print("_________________________________")
+    print(Fore.MAGENTA + "_________________________________")
+    print(Fore.MAGENTA + "  Victorio's Information System  ")
+    print(Fore.MAGENTA + "_________________________________")
     print(". Basic Information")
     print("2. Goals")
     print("3. Alarm Clock")
@@ -19,13 +22,13 @@ def display_menu():
     print("6. Comment from Teammate 3")
     print("7. Comment from Teammate 4")
     print("0. Exit")
-    print("________________________________")
+    print(Fore.MAGENTA + "________________________________")
 
 def get_user_choice():
     try:
-        return int(input("Enter choice: "))
+        return int(input(Fore.MAGENTA + "Enter choice: "))
     except ValueError:
-        print("Invalid input. Please enter a number.")
+        print(Fore.RED + "Invalid input. Please enter a number.")
         return None
 
 def process_choice(choice):
@@ -45,50 +48,58 @@ def process_choice(choice):
         case 7:
             display_teammate_comment("Teammate 4")
         case _:
-            print("Invalid choice. Try again.")
-    input("\nPress Enter to continue...")
+            print(Fore.RED + "Invalid choice. Try again.")
+    input(Fore.CYAN + "\nPress Enter to continue...")
 
 def display_basic_info():
-    print("Victorio's Basic Information:")
-    print("- Full Name     : Kalelle Mae Barcarse Victorio")
+    print(Fore.BLUE + "Victorio's Basic Information:")
+    print(Fore.MAGENTA + "- Full Name     : Kalelle Mae Barcarse Victorio")
     print("- Birthdate     : December 11, 2004")
     print("- Age           : 20 years old")
-    print("- Hobbies       : Playing video games, reading manhwa, " \
-            "playing Roblox")
+    print("- Hobbies       : Playing video games, reading manhwa, playing Roblox")
     print("- Favorite Color: Purple")
 
-
 def display_goals():
-    print("Victorio's goals: ")
-    print("- To graduate from college")
-    print("- To have a cat")
-    print("- To have a stable job")
-    print("- To make my parents proud")
-    print("- To be happy and contented")
-    print("- To be with someone I love")
+    print(Fore.BLUE + "Victorio's Goals:")
+    goals = [
+        "- To graduate from college",
+        "- To have a cat",
+        "- To have a stable job",
+        "- To make my parents proud",
+        "- To be happy and contented",
+        "- To be with someone I love"
+    ]
+    for goal in goals:
+        print(Fore.MAGENTA + goal)
 
 def timer_clock():
-    print("Time Clock")
-    seconds = int(input("Enter countdown time in seconds: "))
+    print(Fore.BLUE + "Time Clock")
+    try:
+        seconds = int(input(Fore.MAGENTA + "Enter countdown time in seconds: "))
+        if seconds <= 0:
+            raise ValueError
+    except ValueError:
+        print(Fore.RED + "Please enter a valid positive integer.")
+        return
 
     while seconds > 0:
         mins, secs = divmod(seconds, 60)
         timer = f"{mins:02d}:{secs:02d}"
-        print(timer, end="\r")  # Overwrites the same line
+        print(Fore.MAGENTA + timer, end="\r")
         time.sleep(1)
         seconds -= 1
 
-    print("Time's up! ⏰")
+    print(Fore.CYAN + "Time's up! ⏰")
 
 def display_teammate_comment(teammate_name):
-    print(f"Comment from {teammate_name}")
+    print(Fore.BLUE + f"Comment from {teammate_name}")
     comments = {
         "Teammate 1": "[Teammate 1's comment goes here]",
         "Teammate 2": "[Teammate 2's comment goes here]",
         "Teammate 3": "[Teammate 3's comment goes here]",
         "Teammate 4": "[Teammate 4's comment goes here]",
     }
-    print(comments.get(teammate_name, "[No comment available]"))
+    print(Fore.MAGENTA + comments.get(teammate_name, "[No comment available]"))
 
 def kalelle():
     while True:
@@ -96,14 +107,13 @@ def kalelle():
         display_menu()
         choice = get_user_choice()
         if choice is None:
-            input("Press Enter to continue...")
+            input(Fore.CYAN + "Press Enter to continue...")
             continue
 
         if choice == EXIT_OPTION:
-            print("Exiting the system.")
+            print(Fore.CYAN + "Exiting the system.")
             break
 
         process_choice(choice)
-
 
 kalelle()
