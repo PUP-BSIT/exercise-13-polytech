@@ -32,6 +32,7 @@ def get_user_choice():
         return None
 
 def process_choice(choice):
+    clear_screen()
     match choice:
         case 1:
             display_basic_info()
