@@ -1,3 +1,4 @@
+import time
 UNSET_OPTION = 0
 EXIT_OPTION = 8
 
@@ -28,7 +29,7 @@ def display_get_choice(choice):
         case 2:
             goals()
         case 3:
-            pass
+            time_clock()
         case 4:
             pass
         case 5:
@@ -39,7 +40,7 @@ def display_get_choice(choice):
             pass
         case _:
             print("Invalid choice. Try again.")
-
+    
 def basic_information():
     print("Victorio's basic information: ")
     print("Full Name: Kalelle Mae Barcarse Victorio")
@@ -54,6 +55,19 @@ def goals():
     print("- To have a cat")
     print("- To have a stable job")
     print("- To make my parents proud")
+
+def time_clock():
+    print("Time Clock")
+    seconds = int(input("Enter countdown time in seconds: "))
+
+    while seconds > 0:
+        mins, secs = divmod(seconds, 60)
+        timer = f"{mins:02d}:{secs:02d}"
+        print(timer, end="\r")  # Overwrites the same line
+        time.sleep(1)
+        seconds -= 1
+
+    print("Time's up! ⏰")
 
 def kalelle():
     while True:
