@@ -83,7 +83,7 @@ def niones_comment():
     )
 
 def victorio_comment():
-    print(Fore.LIGHTBLUE_EX + "Very fun program! - kalelle" + Style.RESET_ALL)
+    print(Fore.LIGHTBLUE_EX + "Good job, mikee!" + Style.RESET_ALL)
 
 def villarta_comment():
     print(Fore.LIGHTBLUE_EX + "Nice - keith." + Style.RESET_ALL)

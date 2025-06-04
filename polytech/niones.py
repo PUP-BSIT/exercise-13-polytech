@@ -42,7 +42,7 @@ def process_choice(choice):
         case 4:
             Raquem_comment()
         case 5:
-            Victorio_comment()
+            option_5()
         case 6:
             capilitan_comment()
         case 7:
@@ -130,8 +130,8 @@ def Raquem_comment():
         Style.RESET_ALL
     )
 
-def Victorio_comment():
-    print(Fore.CYAN + "Very cool! - kalelle" + Style.RESET_ALL)
+def option_5():
+    print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
 
 def capilitan_comment():
     print(Fore.CYAN + "Nice use of colorama for a clean! -mikee" + 
