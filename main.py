@@ -1,3 +1,4 @@
+from polytech import niones, raquem
 from polytech import capilitan
 import os
 
@@ -11,6 +12,9 @@ def display_menu():
     print("================================")
     print("              Menu              ")
     print("================================")
+    print("1. ")
+    print("2. Zyra Joy O. Niones Module")
+    print("3. Annie Rose S. Raquem Module")
     print("1. Mikee C. Capilitan Module")
     print("2. ")
     print("3. ")
@@ -30,11 +34,10 @@ def display_get_choice(choice):
         case 1:
             capilitan.mikee()
         case 2:
-            #TO-DO(Niones): call your module here
+            niones.zyra()
             pass
         case 3:
-            #TO-DO(Raquem): call your module here
-            pass
+            raquem.annie()
         case 4:
             #TO-DO(Villarta): call your module here
             pass
