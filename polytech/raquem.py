@@ -110,8 +110,8 @@ def display_teammate_comment(teammate_name):
     print(title_center(f"Comment from {teammate_name}"))
     print("-" * 50)
     comments = {
-        "1": "[Person 1 comment goes here]",
-        "2": "[Person 2 comment goes here]",
+        "zyra": "[The quote feature is such a nice touch, very inspiring!]",
+        "victorio": "What a colorful and cool program, Annie! ",
         "mikee": "[Impressive use of Python features!]",
         "4": "[Person 4 comment goes here]",
     }

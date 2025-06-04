@@ -52,7 +52,7 @@ def process_choice(choice):
         case 5:
             niones_comment()
         case 6:
-            victorio_comment()
+            display_teammate_comment3()
         case 7:
             capilitan_comment()
         case 0:
@@ -115,14 +115,13 @@ def niones_comment():
         Style.RESET_ALL
     )
 
-def victorio_comment():
+def display_teammate_comment3():
     display_header()
-    print(Fore.CYAN + "what an insightful program! - kalelle" +
-            Style.RESET_ALL)
+    print(Fore.CYAN + "Option 6 comments." + Style.RESET_ALL)
 
 def capilitan_comment():
     display_header()
-    print(Fore.CYAN + "Goodjob! - mikee" + Style.RESET_ALL)
+    print(Fore.CYAN + "Option 7 comments." + Style.RESET_ALL)
 
 def fun_fact_maker():
     display_header()
