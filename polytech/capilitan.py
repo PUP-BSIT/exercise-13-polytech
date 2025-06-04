@@ -3,20 +3,22 @@ from colorama import Fore, Style, init
 
 init(autoreset=True)
 
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def display_header():
-    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + "=" * 50)
-    print("    💙🦋  Mikee Capilitan's Menu  🦋💙")
-    print("=" * 50 + Style.RESET_ALL)
+    print("\n   💙🦋  Mikee Capilitan's Menu  🦋💙")
 
 def display_menu():
     display_header()
-    print(Fore.LIGHTBLUE_EX + "Please choose an option:")
+    print(Fore.LIGHTBLUE_EX + "\nPlease choose an option:")
     print("1. Basic Information")
     print("2. Goals")
     print("3. Exit" + Style.RESET_ALL)
 
 def mikee():
     while True:
+        clear_screen()
         display_menu()
         choice = input(
             Fore.LIGHTBLUE_EX +
@@ -50,6 +52,6 @@ def mikee():
                 "Invalid choice. Please try again." +
                 Style.RESET_ALL
             )
-            input("Press Enter to continue...")
+            input("\nPress Enter to continue...")
 
 mikee()
