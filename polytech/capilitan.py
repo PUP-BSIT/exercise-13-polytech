@@ -18,7 +18,7 @@ def display_menu():
     print("3. Odd or Even Game")
     print("4. Raquem Comment")
     print("5. niones_comment")
-    print("6. Option 6")
+    print("6. victorio_Comment")
     print("7. Option 7")
     print("0. Exit" + Style.RESET_ALL)
 
@@ -82,8 +82,8 @@ def niones_comment():
         Style.RESET_ALL
     )
 
-def option_6():
-    print(Fore.LIGHTBLUE_EX + "Option 6." + Style.RESET_ALL)
+def victorio_comment():
+    print(Fore.LIGHTBLUE_EX + "Good job, mikee!" + Style.RESET_ALL)
 
 def option_7():
     print(Fore.LIGHTBLUE_EX + "Option 7." + Style.RESET_ALL)
@@ -102,7 +102,7 @@ def process_choice(choice):
         case 5:
             niones_comment()
         case 6:
-            option_6()
+            victorio_comment()
         case 7:
             option_7()
         case 0:
