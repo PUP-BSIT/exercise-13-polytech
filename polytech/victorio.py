@@ -115,5 +115,3 @@ def kalelle():
             break
 
         process_choice(choice)
-
-kalelle()
