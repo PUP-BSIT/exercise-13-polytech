@@ -31,7 +31,6 @@ def display_get_choice(choice):
             capilitan.mikee()
         case 2:
             niones.zyra()
-            pass
         case 3:
             raquem.annie()
         case 4:
