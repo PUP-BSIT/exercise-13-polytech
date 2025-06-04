@@ -21,7 +21,7 @@ def display_menu():
     print("4. Teammate Comment: zyra")
     print("5. Teammate Comment: Victorio")
     print("6. Teammate Comment: capilitan")
-    print("7. Teammate Comment: Person 4")
+    print("7. Teammate Comment: villarta")
     print("0. " + Fore.RED + "Exit" + Style.RESET_ALL)
     print(Fore.CYAN + Style.BRIGHT + "-" * 50)
 
@@ -41,7 +41,7 @@ def process_choice(choice):
         case 6:
             display_teammate_comment("capilitan")
         case 7:
-            display_teammate_comment("4")
+            display_teammate_comment("villarta")
         case 0:
             exit_message()
         case _:
@@ -113,7 +113,7 @@ def display_teammate_comment(teammate_name):
         "1": "[Person 1 comment goes here]",
         "2": "[Person 2 comment goes here]",
         "mikee": "[Impressive use of Python features!]",
-        "4": "[Person 4 comment goes here]",
+        "keith": "[Love the color-coded menu]",
     }
     print(comments.get(teammate_name, "[No comment available]"))
 

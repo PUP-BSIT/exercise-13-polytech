@@ -47,7 +47,7 @@ def process_choice(choice):
         case 6:
             display_teammate_comment("Capilitan")
         case 7:
-            display_teammate_comment("Teammate 4")
+            display_teammate_comment("Villarta")
         case _:
             print(Fore.RED + "Invalid choice. Try again.")
     input(Fore.CYAN + "\nPress Enter to continue...")
@@ -98,7 +98,7 @@ def display_teammate_comment(teammate_name):
         "Raquem": "Clean structure and very readable—great job, Kalelle!",
         "Niones": "Simple yet effective! The code is very user-friendly",
         "Capilitan": "Impressive how you used match-case!",
-        "Teammate 4": "[Teammate 4's comment goes here]",
+        "Villarta": "[GoodJob!]",
     }
     print(Fore.MAGENTA + comments.get(teammate_name, "[No comment available]"))
 
