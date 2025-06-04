@@ -23,7 +23,7 @@ def display_menu():
     print("3. Random Fun Facts")
     print("4. Raquem comment")
     print("5. Niones comment")
-    print("6. Comment teammate3")
+    print("6. Victorio comment")
     print("7. Comment teammate4")
     print(Fore.RED + "0. Exit")
 
@@ -52,7 +52,7 @@ def process_choice(choice):
         case 5:
             niones_comment()
         case 6:
-            display_teammate_comment3()
+            victorio_comment()
         case 7:
             display_teammate_comment4()
         case 0:
@@ -115,14 +115,15 @@ def niones_comment():
         Style.RESET_ALL
     )
 
-def display_teammate_comment3():
+def victorio_comment():
     display_header()
-    print(Fore.CYAN + "Option 6 comments." + Style.RESET_ALL)
+    print(Fore.CYAN + "what an insightful program! - kalelle" +
+            Style.RESET_ALL)
 
 def display_teammate_comment4():
     display_header()
     print(Fore.CYAN + "Option 7 comments." + Style.RESET_ALL)
-    
+
 def fun_fact_maker():
     display_header()
     print(Fore.CYAN + "Random Fun Fact")
