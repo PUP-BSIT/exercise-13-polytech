@@ -1,10 +1,12 @@
-import os 
-from colorama import Fore, Style, init
+import os
 
 import tkinter as tk
-from PIL import Image, ImageTk
-import requests
 from io import BytesIO
+
+import requests
+from PIL import Image, ImageTk
+
+from colorama import Fore, Style, init
 
 init(autoreset=True)
 
@@ -75,7 +77,6 @@ def display_basic_info():
         "same artistic energy in designing user-friendly and visually\n"
         "appealing interfaces."
     )
-  
 
 def display_goals():
     display_header()
@@ -87,11 +88,10 @@ def display_goals():
     print("4. To stay motivated in all aspects of life.")
     print("5. To be more faithful to God.")
     print("6. To maintain a healthy lifestyle "
-    "and regulate my menstrual cycle.")
+          "and regulate my menstrual cycle.")
     print("7. To survive summer class.")
     print("8. To be a servant of God.")
     print("9. To Donate my hair once i reached the expected length.")
- 
 
 def display_minecraft_character():
     display_header()
@@ -99,9 +99,10 @@ def display_minecraft_character():
     print(Fore.CYAN + "Please..." + Style.RESET_ALL)
     print("-" * 50)
     url = (
-    "https://crafatar.com/avatars/"
-    "c2e45a26-3395-47ff-86c0-b3dd0c2aa2d2"
-    "?scale=10&overlay=true")   
+        "https://crafatar.com/avatars/"
+        "c2e45a26-3395-47ff-86c0-b3dd0c2aa2d2"
+        "?scale=10&overlay=true"
+    )
 
     try:
         response = requests.get(url)
@@ -121,18 +122,14 @@ def display_minecraft_character():
         print("Error loading Minecraft avatar:", e)
         input("\nPress Enter to continue...")
 
-
 def option_4():
     print(Fore.CYAN + "Option 4." + Style.RESET_ALL)
-
 
 def option_5():
     print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
 
-
 def option_6():
     print(Fore.CYAN + "Option 6." + Style.RESET_ALL)
-
 
 def option_7():
     print(Fore.CYAN + "Option 7." + Style.RESET_ALL)
@@ -155,6 +152,5 @@ def zyra():
         if choice == 0:
             break
         input("Press Enter to continue...")
+
 zyra()
-
-
