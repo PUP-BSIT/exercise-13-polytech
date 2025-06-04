@@ -16,40 +16,12 @@ def display_menu():
     print(Fore.CYAN + "Please choose an option:")
     print("1. Basic Information")
     print("2. Goals")
-    print("3. Option 3")
+    print("3. View Minecraft Character")
     print("4. Option 4")
     print("5. Option 5")
     print("6. Option 6")
     print("7. Option 7")
     print("0. Exit" + Style.RESET_ALL)
-
-def display_basic_info():
-    print(Fore.CYAN + "Basic Information goes here." + Style.RESET_ALL)
-
-
-def display_goals():
-    print(Fore.CYAN + "Goals go here." + Style.RESET_ALL)
-
-
-def option_3():
-    print(Fore.CYAN + "Option 3." + Style.RESET_ALL)
-
-
-def option_4():
-    print(Fore.CYAN + "Option 4." + Style.RESET_ALL)
-
-
-def option_5():
-    print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
-
-
-def option_6():
-    print(Fore.CYAN + "Option 6." + Style.RESET_ALL)
-
-
-def option_7():
-    print(Fore.CYAN + "Option 7." + Style.RESET_ALL)
-
 
 def process_choice(choice):
     clear_screen()
@@ -81,6 +53,32 @@ def process_choice(choice):
                 Style.RESET_ALL
             )
 
+def display_basic_info():
+    print(Fore.CYAN + "Basic Information goes here." + Style.RESET_ALL)
+  
+
+def display_goals():
+    print(Fore.CYAN + "Goals go here." + Style.RESET_ALL)
+
+
+def option_3():
+    print(Fore.CYAN + "Option 3." + Style.RESET_ALL)
+
+
+def option_4():
+    print(Fore.CYAN + "Option 4." + Style.RESET_ALL)
+
+
+def option_5():
+    print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
+
+
+def option_6():
+    print(Fore.CYAN + "Option 6." + Style.RESET_ALL)
+
+
+def option_7():
+    print(Fore.CYAN + "Option 7." + Style.RESET_ALL)
 
 def zyra():
     while True:
