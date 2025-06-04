@@ -1,3 +1,4 @@
+from polytech import capilitan
 import os
 
 UNSET_OPTION = 0
@@ -10,7 +11,7 @@ def display_menu():
     print("================================")
     print("              Menu              ")
     print("================================")
-    print("1. ")
+    print("1. Mikee C. Capilitan Module")
     print("2. ")
     print("3. ")
     print("4. ")
@@ -27,7 +28,7 @@ def get_user_choice():
 def display_get_choice(choice):
     match choice:
         case 1:
-            #TO-DO(Capilitan): call your module here
+            capilitan.mikee()
             pass
         case 2:
             #TO-DO(Niones): call your module here

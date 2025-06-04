@@ -33,7 +33,7 @@ def display_basic_info():
     print("School: Polytechnic University of the Philippines.")
     print("Course: Bachelor of Science in Information Technology (BSIT).")
     print("Favorite Color: Blue.")
-    
+
 def display_goals():
     print("    💙🦋  Mikee's Goals  🦋💙")
     print("\nHave a good life in the future.")
@@ -99,7 +99,7 @@ def process_choice(choice):
         case 0:
             print(
                 Fore.LIGHTBLUE_EX +
-                "Thank you for using this menu! Goodbye!" +
+                "Have a Goodday, Goodbye!" +
                 Style.RESET_ALL
             )
         case _:
@@ -127,5 +127,3 @@ def mikee():
         if choice == 0:
             break
         input("Press Enter to continue...")
-
-mikee()
