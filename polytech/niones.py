@@ -96,7 +96,7 @@ def display_goals():
 def display_minecraft_character():
     display_header()
     print(Fore.CYAN + "Minecraft Character Viewer." + Style.RESET_ALL)
-    print(Fore.CYAN + "Please..." + Style.RESET_ALL)
+    print(Fore.CYAN + "Please wait..." + Style.RESET_ALL)
     print("-" * 50)
     url = (
         "https://crafatar.com/avatars/"
