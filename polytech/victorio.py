@@ -1,5 +1,3 @@
-import os
-
 UNSET_OPTION = 0
 EXIT_OPTION = 8
 
@@ -26,7 +24,7 @@ def get_user_choice():
 def display_get_choice(choice):
     match choice:
         case 1:
-            pass
+            basic_information()
         case 2:
             pass
         case 3:
@@ -41,6 +39,14 @@ def display_get_choice(choice):
             pass
         case _:
             print("Invalid choice. Try again.")
+
+def basic_information():
+    print("Victorio's basic information: ")
+    print("Full Name: Kalelle Mae Barcarse Victorio")
+    print("Birthdate: December 11, 2004")
+    print("Age: 20 years old")
+    print("Hobbies: Playing video games, reading manhwa, and"
+            " playing roblox")
 
 def kalelle():
     while True:
