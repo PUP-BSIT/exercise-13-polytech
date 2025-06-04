@@ -19,9 +19,9 @@ def display_menu():
     print("2. Goals")
     print("3. Quote Maker")
     print("4. Teammate Comment: zyra")
-    print("5. Teammate Comment: Victorio")
+    print("5. Teammate Comment: victorio")
     print("6. Teammate Comment: capilitan")
-    print("7. Teammate Comment: Person 4")
+    print("7. Teammate Comment: villarta")
     print("0. " + Fore.RED + "Exit" + Style.RESET_ALL)
     print(Fore.CYAN + Style.BRIGHT + "-" * 50)
 
