@@ -94,11 +94,15 @@ def kalelle():
         clear_screen()
         display_menu()
         choice = get_user_choice()
+        if choice is None:
+            input("Press Enter to continue...")
+            continue
 
         if choice == EXIT_OPTION:
             print("Exiting the system.")
             break
 
         process_choice(choice)
+
 
 kalelle()
