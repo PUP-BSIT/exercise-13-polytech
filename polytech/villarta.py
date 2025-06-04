@@ -4,6 +4,8 @@ from colorama import Fore, Style, init
 # Initialize colorama
 init(autoreset=True)
 
+EXIT_OPTION = 0
+
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -34,7 +36,48 @@ def get_choice():
                 print(Fore.RED + "Invalid choice. Try again.")
         except ValueError:
             print(Fore.RED + "Please enter a valid number.")
-            
+
+def process_choice(choice):
+    clear_screen()
+    match choice:
+        case 1:
+            display_basic_info()
+        case 2:
+            display_goals()
+        case 3:
+            options()
+        case 4:
+            display_teammate_comment1()
+        case 5:
+            display_teammate_comment2()
+        case 6:
+            display_teammate_comment3()
+        case 7:
+            display_teammate_comment4()
+        case 0:
+            print(Fore.MAGENTA + "\nThank you! Goodbye!\n")
+
+def display_basic_info():
+    print(Fore.MAGENTA + "My Basic Information is here." + Style.RESET_ALL)
+
+def display_goals():
+    print(Fore.MAGENTA + "Goals is here." + Style.RESET_ALL)
+
+def options():
+    print(Fore.MAGENTA + "Option 3." + Style.RESET_ALL)
+
+def display_teammate_comment1():
+    print(Fore.CYAN + "Option 4." + Style.RESET_ALL)
+
+def display_teammate_comment2():
+    print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
+
+def display_teammate_comment3():
+    print(Fore.CYAN + "Option 6." + Style.RESET_ALL)
+
+def display_teammate_comment4():
+    print(Fore.CYAN + "Option 7." + Style.RESET_ALL)
+
 def keith():
     while True:
         clear_screen()
