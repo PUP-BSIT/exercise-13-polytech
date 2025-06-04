@@ -67,7 +67,7 @@ def odd_or_even():
         else:
                 print(f"Wrong! It is {correct}.\n")
 
-def option_4():
+def raquem_comment():
     print(
         Fore.LIGHTBLUE_EX +
         "Nice work, Mikee! The layout is clean and the color scheme "
@@ -94,7 +94,7 @@ def process_choice(choice):
         case 3:
             odd_or_even()
         case 4:
-            option_4()
+            raquem_comment()
         case 5:
             option_5()
         case 6:
