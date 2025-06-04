@@ -4,6 +4,7 @@ import os
 EXIT_OPTION = 0
 
 def display_menu():
+    #loop continues until the user enters 0
     print("_________________________________")
     print("  Victorio's information System  ")
     print("_________________________________")
