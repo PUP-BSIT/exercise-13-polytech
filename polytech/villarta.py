@@ -24,7 +24,7 @@ def display_menu():
     print("4. Raquem comment")
     print("5. Niones comment")
     print("6. Victorio comment")
-    print("7. Comment teammate4")
+    print("7. Capilitan comment")
     print(Fore.RED + "0. Exit")
 
 def get_choice():
@@ -54,7 +54,7 @@ def process_choice(choice):
         case 6:
             victorio_comment()
         case 7:
-            display_teammate_comment4()
+            capilitan_comment()
         case 0:
             print(Fore.MAGENTA + "Thank you! Goodbye!\n")
             return
@@ -120,9 +120,9 @@ def victorio_comment():
     print(Fore.CYAN + "what an insightful program! - kalelle" +
             Style.RESET_ALL)
 
-def display_teammate_comment4():
+def capilitan_comment():
     display_header()
-    print(Fore.CYAN + "Option 7 comments." + Style.RESET_ALL)
+    print(Fore.CYAN + "Goodjob! - mikee" + Style.RESET_ALL)
 
 def fun_fact_maker():
     display_header()
