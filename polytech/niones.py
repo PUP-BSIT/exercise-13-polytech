@@ -1,6 +1,11 @@
 import os 
 from colorama import Fore, Style, init
 
+import tkinter as tk
+from PIL import Image, ImageTk
+import requests
+from io import BytesIO
+
 init(autoreset=True)
 
 def clear_screen():
@@ -31,7 +36,7 @@ def process_choice(choice):
         case 2:
             display_goals()
         case 3:
-            option_3()
+            display_minecraft_character()
         case 4:
             option_4()
         case 5:
@@ -70,7 +75,6 @@ def display_basic_info():
         "same artistic energy in designing user-friendly and visually\n"
         "appealing interfaces."
     )
-    input("\nPress Enter to continue...")
   
 
 def display_goals():
@@ -87,10 +91,35 @@ def display_goals():
     print("7. To survive summer class.")
     print("8. To be a servant of God.")
     print("9. To Donate my hair once i reached the expected length.")
-    input("\nPress Enter to continue...")
+ 
 
-def option_3():
-    print(Fore.CYAN + "Option 3." + Style.RESET_ALL)
+def display_minecraft_character():
+    display_header()
+    print(Fore.CYAN + "Minecraft Character Viewer." + Style.RESET_ALL)
+    print(Fore.CYAN + "Please..." + Style.RESET_ALL)
+    print("-" * 50)
+    url = (
+    "https://crafatar.com/avatars/"
+    "c2e45a26-3395-47ff-86c0-b3dd0c2aa2d2"
+    "?scale=10&overlay=true")   
+
+    try:
+        response = requests.get(url)
+        image = Image.open(BytesIO(response.content))
+
+        root = tk.Tk()
+        root.title("Zyra's Minecraft Character")
+
+        photo = ImageTk.PhotoImage(image)
+        label = tk.Label(root, image=photo)
+        label.image = photo
+        label.pack()
+
+        root.mainloop()
+
+    except Exception as e:
+        print("Error loading Minecraft avatar:", e)
+        input("\nPress Enter to continue...")
 
 
 def option_4():
