@@ -47,11 +47,22 @@ def process_choice(choice):
 
 def display_basic_info():
     display_header()
-    print(Fore.MAGENTA + "Basic Information goes here." + Style.RESET_ALL)
-    
+    print(Fore.MAGENTA + Style.BRIGHT + "Basic Information")
+    print("-" * 50)
+    print("Name: Annie Rose Raquem")
+    print("Age: 20")
+    print("Birthday: June 3, 2005")
+    print("Birthplace: Taguig City")
+    print("Course: BSIT")
+
 def display_goals():
     display_header()
-    print(Fore.MAGENTA + "Goals go here." + Style.RESET_ALL)
+    print(Fore.MAGENTA + Style.BRIGHT + "Goals in Life")
+    print("-" * 50)
+    print("1. Finish my degree.")
+    print("2. Have a stable job.")
+    print("3. Live a happy life.")
+   
 
 def option_3():
     display_header()
