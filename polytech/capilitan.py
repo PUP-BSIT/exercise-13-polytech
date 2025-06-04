@@ -16,7 +16,7 @@ def display_menu():
     print("1. Basic Information")
     print("2. Goals")
     print("3. Odd or Even Game")
-    print("4. Option 4")
+    print("4. Raquem Comment")
     print("5. Option 5")
     print("6. Option 6")
     print("7. Option 7")
@@ -68,7 +68,12 @@ def odd_or_even():
                 print(f"Wrong! It is {correct}.\n")
 
 def option_4():
-    print(Fore.LIGHTBLUE_EX + "Option 4." + Style.RESET_ALL)
+    print(
+        Fore.LIGHTBLUE_EX +
+        "Nice work, Mikee! The layout is clean and the color scheme "
+        "is very eye-catching! -Annie" +
+        Style.RESET_ALL
+    )
 
 def option_5():
     print(Fore.LIGHTBLUE_EX + "Option 5." + Style.RESET_ALL)

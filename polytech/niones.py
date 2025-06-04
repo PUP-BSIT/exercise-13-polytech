@@ -24,7 +24,7 @@ def display_menu():
     print("1. Basic Information")
     print("2. Goals")
     print("3. View Minecraft Character")
-    print("4. Option 4")
+    print("4. Raquem comment")
     print("5. Option 5")
     print("6. Option 6")
     print("7. Option 7")
@@ -40,7 +40,7 @@ def process_choice(choice):
         case 3:
             display_minecraft_character()
         case 4:
-            option_4()
+            Raquem_comment()
         case 5:
             option_5()
         case 6:
@@ -122,8 +122,13 @@ def display_minecraft_character():
         print("Error loading Minecraft avatar:", e)
         input("\nPress Enter to continue...")
 
-def option_4():
-    print(Fore.CYAN + "Option 4." + Style.RESET_ALL)
+def Raquem_comment():
+    print(
+        Fore.CYAN +
+        "Awesome touch with the Minecraft character viewer — "
+        "it's so unique! -Annie" +
+        Style.RESET_ALL
+    )
 
 def option_5():
     print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
