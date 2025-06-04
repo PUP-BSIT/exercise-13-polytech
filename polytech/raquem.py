@@ -41,7 +41,7 @@ def process_choice(choice):
         case 6:
             display_teammate_comment("capilitan")
         case 7:
-            display_teammate_comment("4")
+            display_teammate_comment("villarta")
         case 0:
             exit_message()
         case _:
@@ -112,8 +112,8 @@ def display_teammate_comment(teammate_name):
     comments = {
         "zyra": "[The quote feature is such a nice touch, very inspiring!]",
         "victorio": "What a colorful and cool program, Annie! ",
-        "mikee": "[Impressive use of Python features!]",
-        "4": "[Person 4 comment goes here]",
+        "capilitan": "[Impressive use of Python features!]",
+        "villarta": "[Nice Code]",
     }
     print(comments.get(teammate_name, "[No comment available]"))
 
@@ -153,4 +153,3 @@ def annie():
         if choice == 0:
             break
         input(Fore.GREEN + "\nPress Enter to continue...")
-

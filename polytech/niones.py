@@ -27,7 +27,7 @@ def display_menu():
     print("4. Raquem comment")
     print("5. Victorio comment")
     print("6. Capilitan comment")
-    print("7. Option 7")
+    print("7. villarta comment")
     print("0. Exit" + Style.RESET_ALL)
 
 def process_choice(choice):
@@ -46,7 +46,7 @@ def process_choice(choice):
         case 6:
             capilitan_comment()
         case 7:
-            option_7()
+            villarta_comment()
         case 0:
             print(
                 Fore.CYAN +
@@ -137,8 +137,8 @@ def capilitan_comment():
     print(Fore.CYAN + "Nice use of colorama for a clean! -mikee" + 
         Style.RESET_ALL)
 
-def option_7():
-    print(Fore.CYAN + "Option 7." + Style.RESET_ALL)
+def villarta_comment():
+    print(Fore.CYAN + "Nice Code! - keith." + Style.RESET_ALL)
 
 def zyra():
     while True:
