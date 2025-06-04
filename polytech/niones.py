@@ -74,8 +74,20 @@ def display_basic_info():
   
 
 def display_goals():
+    display_header()
     print(Fore.CYAN + "Goals go here." + Style.RESET_ALL)
-
+    print("-" * 50)
+    print("1. To survive and thrive in college life.")
+    print("2. To graduate as a skilled and knowledgeable person.")
+    print("3. To become a skilled UX/UI designer.")
+    print("4. To stay motivated in all aspects of life.")
+    print("5. To be more faithful to God.")
+    print("6. To maintain a healthy lifestyle "
+    "and regulate my menstrual cycle.")
+    print("7. To survive summer class.")
+    print("8. To be a servant of God.")
+    print("9. To Donate my hair once i reached the expected length.")
+    input("\nPress Enter to continue...")
 
 def option_3():
     print(Fore.CYAN + "Option 3." + Style.RESET_ALL)
