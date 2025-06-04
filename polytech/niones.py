@@ -50,7 +50,7 @@ def process_choice(choice):
         case 0:
             print(
                 Fore.CYAN +
-                "Thank you and Goodbye!" +
+                "Thank you and Have a Good day. Padayon!" +
                 Style.RESET_ALL
             )
         case _:
