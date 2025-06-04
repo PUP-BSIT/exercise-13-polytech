@@ -87,7 +87,10 @@ def display_goals():
         "4. Grow emotionally and intellectually.\n"
         "5. Finish studies and pursue a career or business.\n"
         "6. Help those in need.\n"
-        "7. Live a life of purpose and peace."
+        "7. Live a life of purpose and peace.\n"
+        "8. Travel and explore new cultures.\n"
+        "9. Continuously learn new skills.\n"
+        "10. Inspire others to reach their potential."
     )
 
 def options():
