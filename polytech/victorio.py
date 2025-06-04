@@ -26,7 +26,7 @@ def display_get_choice(choice):
         case 1:
             basic_information()
         case 2:
-            pass
+            goals()
         case 3:
             pass
         case 4:
@@ -47,6 +47,13 @@ def basic_information():
     print("Age: 20 years old")
     print("Hobbies: Playing video games, reading manhwa, and"
             " playing roblox")
+
+def goals():
+    print("Victorio's goals: ")
+    print("- To graduate from college")
+    print("- To have a cat")
+    print("- To have a stable job")
+    print("- To make my parents proud")
 
 def kalelle():
     while True:
