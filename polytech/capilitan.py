@@ -7,51 +7,91 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def display_header():
-    print("\n   💙🦋  Mikee Capilitan's Menu  🦋💙")
-
+    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + "=" * 50)
+    print("    💙🦋  Mikee Capilitan's Menu  🦋💙")
+    
 def display_menu():
     display_header()
     print(Fore.LIGHTBLUE_EX + "\nPlease choose an option:")
     print("1. Basic Information")
     print("2. Goals")
-    print("3. Exit" + Style.RESET_ALL)
+    print("3. Option 3")
+    print("4. Option 4")
+    print("5. Option 5")
+    print("6. Option 6")
+    print("7. Option 7")
+    print("0. Exit" + Style.RESET_ALL)
 
-def mikee():
-    while True:
-        clear_screen()
-        display_menu()
-        choice = input(
-            Fore.LIGHTBLUE_EX +
-            "\nEnter your choice: " +
-            Style.RESET_ALL
-        )
-        if choice == '1':
+def display_basic_info():
+    print(Fore.LIGHTBLUE_EX + "Basic Information go here." + Style.RESET_ALL)
+
+def display_goals():
+    print(Fore.LIGHTBLUE_EX + "Goals go here." + Style.RESET_ALL)
+
+def option_3():
+    print(Fore.LIGHTBLUE_EX + "Option 3." + Style.RESET_ALL)
+
+def option_4():
+    print(Fore.LIGHTBLUE_EX + "Option 4." + Style.RESET_ALL)
+
+def option_5():
+    print(Fore.LIGHTBLUE_EX + "Option 5." + Style.RESET_ALL)
+
+def option_6():
+    print(Fore.LIGHTBLUE_EX + "Option 6." + Style.RESET_ALL)
+
+def option_7():
+    print(Fore.LIGHTBLUE_EX + "Option 7." + Style.RESET_ALL)
+
+def process_choice(choice):
+    clear_screen()
+    match choice:
+        case 1:
+            display_basic_info()
+        case 2:
+            display_goals()
+        case 3:
+            option_3()
+        case 4:
+            option_4()
+        case 5:
+            option_5()
+        case 6:
+            option_6()
+        case 7:
+            option_7()
+        case 0:
             print(
                 Fore.LIGHTBLUE_EX +
-                "You selected Basic Information." +
+                "Thank you for using this menu! Goodbye!" +
                 Style.RESET_ALL
             )
-            input("Press Enter to continue...")
-        elif choice == '2':
-            print(
-                Fore.LIGHTBLUE_EX +
-                "You selected Goals." +
-                Style.RESET_ALL
-            )
-            input("Press Enter to continue...")
-        elif choice == '3':
-            print(
-                Fore.LIGHTBLUE_EX +
-                "Exiting..." +
-                Style.RESET_ALL
-            )
-            break
-        else:
+        case _:
             print(
                 Fore.RED +
                 "Invalid choice. Please try again." +
                 Style.RESET_ALL
             )
-            input("\nPress Enter to continue...")
+
+def mikee():
+    while True:
+        clear_screen()
+        display_menu()
+        try:
+            choice = int(
+                input(
+                    Fore.LIGHTBLUE_EX +
+                    "\nEnter your choice: " +
+                    Style.RESET_ALL
+                )
+            )
+        except ValueError:
+            choice = -1
+        process_choice(choice)
+        if choice == 0:
+            break
+        input(Fore.LIGHTBLUE_EX + 
+              "Press Enter to continue..." +
+              Style.RESET_ALL)
 
 mikee()
