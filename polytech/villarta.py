@@ -21,7 +21,7 @@ def display_menu():
     print(Fore.YELLOW + "1. Basic Information")
     print("2. Goals")
     print("3. Random Fun Facts")
-    print("4. Comment teammate1")
+    print("4. Raquem comment")
     print("5. Comment teammate2")
     print("6. Comment teammate3")
     print("7. Comment teammate4")
@@ -48,7 +48,7 @@ def process_choice(choice):
         case 3:
             fun_fact_maker()
         case 4:
-            display_teammate_comment1()
+            raquem_comment()
         case 5:
             display_teammate_comment2()
         case 6:
@@ -97,9 +97,14 @@ def options():
     display_header()
     print(Fore.CYAN + "Options." + Style.RESET_ALL)
 
-def display_teammate_comment1():
+def raquem_comment():
     display_header()
-    print(Fore.CYAN + "Option 4 comments." + Style.RESET_ALL)
+    print(
+        Fore.CYAN +
+        "The fun facts feature is super creative—really makes the "
+        "program fun! -Annie" +
+        Style.RESET_ALL
+    )
 
 def display_teammate_comment2():
     display_header()

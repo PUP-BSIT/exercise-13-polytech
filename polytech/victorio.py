@@ -17,7 +17,7 @@ def display_menu():
     print("1. Basic Information")
     print("2. Goals")
     print("3. Alarm Clock")
-    print("4. Comment from Teammate 1")
+    print("4. Raquem comment")
     print("5. Comment from Teammate 2")
     print("6. Comment from Teammate 3")
     print("7. Comment from Teammate 4")
@@ -41,7 +41,7 @@ def process_choice(choice):
         case 3:
             timer_clock()
         case 4:
-            display_teammate_comment("Teammate 1")
+            display_teammate_comment("Raquem")
         case 5:
             display_teammate_comment("Teammate 2")
         case 6:
@@ -95,7 +95,7 @@ def timer_clock():
 def display_teammate_comment(teammate_name):
     print(Fore.BLUE + f"Comment from {teammate_name}")
     comments = {
-        "Teammate 1": "[Teammate 1's comment goes here]",
+        "Raquem": "Clean structure and very readable—great job, Kalelle!",
         "Teammate 2": "[Teammate 2's comment goes here]",
         "Teammate 3": "[Teammate 3's comment goes here]",
         "Teammate 4": "[Teammate 4's comment goes here]",
