@@ -22,7 +22,7 @@ def display_menu():
     print("2. Goals")
     print("3. Random Fun Facts")
     print("4. Raquem comment")
-    print("5. Comment teammate2")
+    print("5. Niones comment")
     print("6. Comment teammate3")
     print("7. Comment teammate4")
     print(Fore.RED + "0. Exit")
@@ -50,7 +50,7 @@ def process_choice(choice):
         case 4:
             raquem_comment()
         case 5:
-            display_teammate_comment2()
+            niones_comment()
         case 6:
             display_teammate_comment3()
         case 7:
@@ -106,9 +106,14 @@ def raquem_comment():
         Style.RESET_ALL
     )
 
-def display_teammate_comment2():
+def niones_comment():
     display_header()
-    print(Fore.CYAN + "Option 5 comments." + Style.RESET_ALL)
+    print(
+        Fore.CYAN +
+        "The layout and color choices make everything easy to "
+        "follow. -zyra" +
+        Style.RESET_ALL
+    )
 
 def display_teammate_comment3():
     display_header()
