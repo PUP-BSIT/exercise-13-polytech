@@ -40,9 +40,9 @@ def process_choice(choice):
         case 3:
             display_minecraft_character()
         case 4:
-            Raquem_comment()
+            raquem_comment()
         case 5:
-            option_5()
+            victorio_comment()
         case 6:
             capilitan_comment()
         case 7:
@@ -122,7 +122,7 @@ def display_minecraft_character():
         print("Error loading Minecraft avatar:", e)
         input("\nPress Enter to continue...")
 
-def Raquem_comment():
+def raquem_comment():
     print(
         Fore.CYAN +
         "Awesome touch with the Minecraft character viewer — "
@@ -130,8 +130,8 @@ def Raquem_comment():
         Style.RESET_ALL
     )
 
-def option_5():
-    print(Fore.CYAN + "Option 5." + Style.RESET_ALL)
+def victorio_comment():
+    print(Fore.CYAN + "colorful code! - kalelle" + Style.RESET_ALL)
 
 def capilitan_comment():
     print(Fore.CYAN + "Nice use of colorama for a clean! -mikee" + 
