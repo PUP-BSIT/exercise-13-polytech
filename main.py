@@ -29,7 +29,6 @@ def display_get_choice(choice):
     match choice:
         case 1:
             capilitan.mikee()
-            pass
         case 2:
             #TO-DO(Niones): call your module here
             pass
