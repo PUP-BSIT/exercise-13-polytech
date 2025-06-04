@@ -35,7 +35,7 @@ def process_choice(choice):
         case 2:
             display_goals()
         case 3:
-            time_clock()
+            timer_clock()
         case 4:
             display_teammate_comment("Teammate 1")
         case 5:
@@ -67,7 +67,7 @@ def display_goals():
     print("- To be happy and contented")
     print("- To be with someone I love")
 
-def time_clock():
+def timer_clock():
     print("Time Clock")
     seconds = int(input("Enter countdown time in seconds: "))
 
