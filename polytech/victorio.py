@@ -3,6 +3,9 @@ import os
 
 EXIT_OPTION = 0
 
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def display_menu():
     #loop continues until the user enters 0
     print("_________________________________")
@@ -34,13 +37,13 @@ def process_choice(choice):
         case 3:
             time_clock()
         case 4:
-            display_teammate_comment()
+            display_teammate_comment("Teammate 1")
         case 5:
-            display_teammate_comment()
+            display_teammate_comment("Teammate 2")
         case 6:
-            display_teammate_comment()
+            display_teammate_comment("Teammate 3")
         case 7:
-            display_teammate_comment()
+            display_teammate_comment("Teammate 4")
         case _:
             print("Invalid choice. Try again.")
     input("\nPress Enter to continue...")
@@ -85,10 +88,10 @@ def display_teammate_comment(teammate_name):
         "Teammate 4": "[Teammate 4's comment goes here]",
     }
     print(comments.get(teammate_name, "[No comment available]"))
-    input("\nPress Enter to continue...")
 
 def kalelle():
     while True:
+        clear_screen()
         display_menu()
         choice = get_user_choice()
 
@@ -96,6 +99,6 @@ def kalelle():
             print("Exiting the system.")
             break
 
-        os.system('cls')
         process_choice(choice)
-        os.system('cls')
+
+kalelle()
