@@ -1,4 +1,4 @@
-from polytech import niones, villarta
+from polytech import niones, raquem, villarta
 import os
 
 UNSET_OPTION = 0
@@ -13,7 +13,7 @@ def display_menu():
     print("================================")
     print("1. ")
     print("2. Zyra Joy O. Niones Module")
-    print("3. ")
+    print("3. Annie Rose S. Raquem Module")
     print("4. John Keith Villarta Module")
     print("5. ")
     print("6. Exit")
@@ -34,8 +34,7 @@ def display_get_choice(choice):
             niones.zyra()
             pass
         case 3:
-            #TO-DO(Raquem): call your module here
-            pass
+            raquem.annie()
         case 4:
             villarta.keith()
         case 5:
