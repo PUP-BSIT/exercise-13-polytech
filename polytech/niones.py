@@ -54,7 +54,23 @@ def process_choice(choice):
             )
 
 def display_basic_info():
+    display_header()
     print(Fore.CYAN + "Basic Information goes here." + Style.RESET_ALL)
+    print("-" * 50)
+    print(
+        "Hello! I'm Zyra Joy O. Niones, a 20-year-old student currently\n"
+        "taking up a Bachelor of Science in Information Technology at the\n"
+        "Polytechnic University of the Philippines. Among the different\n"
+        "areas in IT, I’ve grown to enjoy frontend development the most, as\n"
+        "it beautifully blends technology with creativity. Although I'm not\n"
+        "yet a fully skilled frontend developer, I am eager to learn more\n"
+        "and hone my skills in this area. This interest closely connects to\n"
+        "my long-time passion for art—especially traditional forms like\n"
+        "sculpture and drawing. Through frontend work, I get to express that\n"
+        "same artistic energy in designing user-friendly and visually\n"
+        "appealing interfaces."
+    )
+    input("\nPress Enter to continue...")
   
 
 def display_goals():
@@ -84,10 +100,20 @@ def zyra():
     while True:
         clear_screen()
         display_menu()
-        choice = input(Fore.CYAN + "\nEnter your choice: " + Style.RESET_ALL)
+        try:
+            choice = int(
+                input(
+                    Fore.CYAN +
+                    "\nEnter your choice: " +
+                    Style.RESET_ALL
+                )
+            )
+        except ValueError:
+            choice = -1
         process_choice(choice)
-        if choice == '3':
+        if choice == 0:
             break
-        input(Fore.CYAN + "\nPress Enter to continue..." + Style.RESET_ALL)
-
+        input("Press Enter to continue...")
 zyra()
+
+
