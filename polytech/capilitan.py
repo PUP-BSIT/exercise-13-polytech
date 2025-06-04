@@ -17,7 +17,7 @@ def display_menu():
     print("2. Goals")
     print("3. Odd or Even Game")
     print("4. Raquem Comment")
-    print("5. Option 5")
+    print("5. niones_comment")
     print("6. Victorio Comment")
     print("7. Option 7")
     print("0. Exit" + Style.RESET_ALL)
@@ -75,8 +75,12 @@ def raquem_comment():
         Style.RESET_ALL
     )
 
-def option_5():
-    print(Fore.LIGHTBLUE_EX + "Option 5." + Style.RESET_ALL)
+def niones_comment():
+    print(
+        Fore.LIGHTBLUE_EX +
+        "Great use of emojis in headers, adds personality to the UI! - Zyra" +
+        Style.RESET_ALL
+    )
 
 def victorio_comment():
     print(Fore.LIGHTBLUE_EX + "Very fun program! - kalelle" + Style.RESET_ALL)
@@ -96,7 +100,7 @@ def process_choice(choice):
         case 4:
             raquem_comment()
         case 5:
-            option_5()
+            niones_comment()
         case 6:
             victorio_comment()
         case 7:
