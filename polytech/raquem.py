@@ -112,8 +112,8 @@ def display_teammate_comment(teammate_name):
     comments = {
         "zyra": "[The quote feature is such a nice touch, very inspiring!]",
         "victorio": "What a colorful and cool program, Annie! ",
-        "mikee": "[Impressive use of Python features!]",
-        "keith": "[Love the color-coded menu]",
+        "capilitan": "[Impressive use of Python features!]",
+        "villarta": "[Love the color-coded menu]",
     }
     print(comments.get(teammate_name, "[No comment available]"))
 
