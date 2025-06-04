@@ -1,6 +1,10 @@
+import os 
 from colorama import Fore, Style, init
 
 init(autoreset=True)
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def display_header():
     print(Fore.CYAN + Style.BRIGHT + "=" * 50)
@@ -16,11 +20,13 @@ def display_menu():
 
 def zyra():
     while True:
+        clear_screen()
         display_menu()
         choice = input(
             Fore.CYAN + "\nEnter your choice: " + Style.RESET_ALL
         )
         if choice == '1':
+            clear_screen()
             print(
                 Fore.CYAN +
                 "\nYou selected Basic Information." +
@@ -29,6 +35,7 @@ def zyra():
             print("Display basic information here.")
             input("\nPress Enter to continue...")
         elif choice == '2':
+            clear_screen()
             print(
                 Fore.CYAN +
                 "\nYou selected Goals." +
