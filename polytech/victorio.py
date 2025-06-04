@@ -49,13 +49,14 @@ def process_choice(choice):
     input("\nPress Enter to continue...")
 
 def display_basic_info():
-    print("Victorio's basic information: ")
-    print("Full Name: Kalelle Mae Barcarse Victorio")
-    print("Birthdate: December 11, 2004")
-    print("Age: 20 years old")
-    print("Hobbies: Playing video games, reading manhwa, and"
-            " playing roblox")
-    print("Favorite Color: Purple")
+    print("Victorio's Basic Information:")
+    print("- Full Name     : Kalelle Mae Barcarse Victorio")
+    print("- Birthdate     : December 11, 2004")
+    print("- Age           : 20 years old")
+    print("- Hobbies       : Playing video games, reading manhwa, " \
+            "playing Roblox")
+    print("- Favorite Color: Purple")
+
 
 def display_goals():
     print("Victorio's goals: ")
