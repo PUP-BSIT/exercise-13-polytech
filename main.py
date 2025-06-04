@@ -32,7 +32,6 @@ def display_get_choice(choice):
             pass
         case 2:
             niones.zyra()
-            pass
         case 3:
             #TO-DO(Raquem): call your module here
             pass
