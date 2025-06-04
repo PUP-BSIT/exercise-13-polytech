@@ -61,6 +61,11 @@ def display_basic_info():
     print("Birthday: June 3, 2005")
     print("Birthplace: Taguig City")
     print("Course: BSIT")
+    print("Year Level: 2nd Year")
+    print("School: Polytechnic University of the Philippines")
+    print("Hobbies: Reading, drawing, listening to music, coding")
+    print("Favorite Color: Purple")
+    print("Favorite Food: Avocado")
 
 def display_goals():
     display_header()
@@ -69,7 +74,14 @@ def display_goals():
     print("1. Finish my degree.")
     print("2. Have a stable job.")
     print("3. Live a happy life.")
-   
+    print("4. Travel to different countries.")
+    print("5. Support my family.")
+    print("6. Continuously learn and grow.")
+    print("7. Make a positive impact on others.")
+    print("8. Build my own tech startup.")
+    print("9. Build my own personal business.")
+    print("10. Write and publish a book.")
+    print("11. Inspire young women in tech.")
 
 def quote_maker():
     display_header()
