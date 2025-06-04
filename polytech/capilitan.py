@@ -7,7 +7,6 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def display_header():
-    print(Fore.LIGHTBLUE_EX + Style.BRIGHT + "=" * 50)
     print("    💙🦋  Mikee Capilitan's Menu  🦋💙")
     
 def display_menu():
@@ -23,7 +22,15 @@ def display_menu():
     print("0. Exit" + Style.RESET_ALL)
 
 def display_basic_info():
-    print(Fore.LIGHTBLUE_EX + "Basic Information go here." + Style.RESET_ALL)
+    print("    💙🦋  Mikee's Basic Information  🦋💙")
+
+    print("\nName: Mikee . Capilitan. ")
+    print("Age: 20 years old. ") 
+    print("Sex: Female. ")
+    print("Birthday: December 5, 2004. ")
+    print("Civil Status: Single. ")
+    print("Religion: Roman Catholic. ")
+    print("Course: Bachelor of Science in Information Technology (BSIT). ")
 
 def display_goals():
     print(Fore.LIGHTBLUE_EX + "Goals go here." + Style.RESET_ALL)
@@ -90,8 +97,6 @@ def mikee():
         process_choice(choice)
         if choice == 0:
             break
-        input(Fore.LIGHTBLUE_EX + 
-              "Press Enter to continue..." +
-              Style.RESET_ALL)
+        input("Press Enter to continue...")
 
 mikee()
