@@ -8,13 +8,13 @@ def display_menu():
     print("_________________________________")
     print("  Victorio's information System  ")
     print("_________________________________")
-    print("1. Basic Information")
+    print(". Basic Information")
     print("2. Goals")
     print("3. Alarm Clock")
-    print("4. Comment from Capilitan")
-    print("5. Comment from Niones")
-    print("6. Comment from Raquem")
-    print("7. Comment from Villarta")
+    print("4. Comment from Teammate 1")
+    print("5. Comment from Teaammate 2")
+    print("6. Comment from Teammate 3")
+    print("7. Comment from Teammate 4")
     print("0. Exit")
     print("________________________________")
 
@@ -34,13 +34,13 @@ def display_get_choice(choice):
         case 3:
             time_clock()
         case 4:
-            pass
+            display_teammate_comment()
         case 5:
-            pass
+            display_teammate_comment()
         case 6:
-            pass
+            display_teammate_comment()
         case 7:
-            pass
+            display_teammate_comment()
         case _:
             print("Invalid choice. Try again.")
     input("\nPress Enter to continue...")
@@ -73,6 +73,17 @@ def time_clock():
 
     print("Time's up! ⏰")
 
+def display_teammate_comment(teammate_name):
+    print(f"Comment from {teammate_name}")
+    comments = {
+        "Teammate 1": "[Teammate 1's comment goes here]",
+        "Teammate 2": "[Teammate 2's comment goes here]",
+        "Teammate 3": "[Teammate 3's comment goes here]",
+        "Teammate 4": "[Teammate 4's comment goes here]",
+    }
+    print(comments.get(teammate_name, "[No comment available]"))
+    input("\nPress Enter to continue...")
+
 def kalelle():
     while True:
         display_menu()
@@ -87,8 +98,3 @@ def kalelle():
         os.system('cls')
 
 kalelle()
-
-
-
-
-
